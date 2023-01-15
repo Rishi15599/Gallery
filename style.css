@@ -1,0 +1,32 @@
+.image-gallery{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
+}
+.image{
+    flex-basis: 100%;
+    padding: 15px;
+    display: block;
+    box-sizing: border-box;
+    border-radius: 25px;
+}
+@media only screen and (max-width:576px){
+    .image{
+        flex-basis: 100%;
+    }
+}
+@media only screen and (min-width:577px){
+    .image{
+        flex-basis: 50%;
+    }
+}
+@media only screen and (min-width:786px){
+    .image{
+        flex-basis: 33.33%;
+    }
+}
+body{
+    display: block;
+    margin: 8px;
+}
